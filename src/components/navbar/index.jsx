@@ -28,19 +28,19 @@ const NavBar = () => {
 
                 <li onClick={() => setActive(!active)}>
                     <Link to='/projects'>
-                        Projects
+                        Projetos
                     </Link>
                 </li>
 
                 <li onClick={() => setActive(!active)}>
                     <Link to='/about'>
-                        About
+                        Sobre
                     </Link>
                 </li>
 
                 <li onClick={() => setActive(!active)}>
                     <Link to='/resume'>
-                        Resume
+                        Curriculo
                     </Link>
                 </li>
 

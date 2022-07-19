@@ -19,7 +19,7 @@ function About() {
                 <div className="about__intro-bg">
 
                     <div className="about__info">
-                        <h2><span className="crisp">About</span> Me</h2>
+                        <h2><span className="crisp">Sobre</span> mim</h2>
                         <blockquote >
 
                             <p> Estou sempre em busca de novos conhecimentos. Estudo programação web desde 2021, desde então, venho criando projetos pessoais e profissionais, nos quais acabo pondo em prática todos os conhecimentos que adquiro. Sou uma pessoa bem flexível e fácil de se lidar, adoro trabalhos em grupos e de aprender coisas novas com os outros.</p>
@@ -46,7 +46,7 @@ function About() {
             </section>
 
             <section className="about__tools">
-                <h2><span className="crisp">Feramentas </span> que eu uso</h2>
+                <h2><span className="crisp">Ferramentas </span> que uso</h2>
                 <div className="about__tools-cards">
                     {Icons.IconsTools.map((skills, i) => (
                         <Card iconsSkills={skills.imgUrl} name={skills.name} key={i} />
