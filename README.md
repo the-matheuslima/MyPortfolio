@@ -17,7 +17,7 @@
   Esse é meu portfolio para em apresentar e mostrar os meus conhecimentos de uma forma diferente.
 </blockquote>
 
-<p align="center">Acesse o projeto clicando <a href="https://blog-react-the-matheuslima.vercel.app/" target="_blank"> aqui </a> </p>
+<p align="center">Acesse o projeto clicando <a href="https://my-portfolio-the-matheuslima.vercel.app/" target="_blank"> aqui </a> </p>
 
 <h2>🚀Tecnologias</h2/>
 
