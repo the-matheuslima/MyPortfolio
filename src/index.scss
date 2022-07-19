@@ -1,0 +1,45 @@
+@use "./scss/" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1400px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: $text-color-default;
+  background-color: $bg-default;
+  font-family: $font-1;
+}
+
+.crisp {
+  color: $text-color-2;
+}
+
+.mgb-1 {
+  margin-bottom: 1rem;
+}
+
+canvas {
+  display: block;
+  // vertical-align: bottom;
+}

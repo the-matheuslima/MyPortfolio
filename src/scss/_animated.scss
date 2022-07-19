@@ -1,0 +1,7 @@
+@use "./variables" as *;
+
+@keyframes box-shadow {
+    50% {
+        box-shadow: 0px 0px 200px 200px $bg-gradient-2;
+    }
+}

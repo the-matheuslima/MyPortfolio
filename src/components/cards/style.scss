@@ -1,0 +1,29 @@
+@use "../../scss/" as *;
+
+.card {
+    background-color: $card-color;
+    color: $text-color-2;
+
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 0.4s ease-in;
+    @include flex(center, center);
+
+    width: 150px;
+    @media (min-width: 796px) {
+        width: 200px;
+    }
+
+    &:hover {
+        background-color: $bg-gradient-2;
+    }
+
+    .img-icons {
+        width: 70px;
+        height: 42px;
+        text-align: center;
+        object-fit: contain;
+    }
+}

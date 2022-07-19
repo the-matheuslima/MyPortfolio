@@ -1,0 +1,72 @@
+@use "../../scss/" as *;
+
+.about {
+    margin-top: 5rem;
+    &__intro {
+        padding: 5rem 0;
+        padding: 1rem;
+        background-color: $bg-gradient-2;
+
+        &-bg {
+            @include flex(center, center);
+            flex-direction: column;
+            @media (min-width: $mobile) {
+                flex-direction: row;
+            }
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about__info {
+            flex: 3;
+
+            h2 {
+                font-family: $font-2;
+                font-size: 2.4rem;
+                color: $text-color-default;
+            }
+
+            p {
+                padding: 1rem 0;
+                line-height: 1.3rem;
+            }
+        }
+
+        .about__gif {
+            flex: 1;
+        }
+    }
+
+    &__skills,
+    &__tools {
+        padding-top: 5rem;
+
+        h2 {
+            font-size: 2.4rem;
+            padding: 2rem;
+        }
+    }
+
+    &__skills {
+        text-align: start;
+        &-cards {
+            @include flex(center, flex-start);
+            flex-wrap: wrap;
+            max-width: 70%;
+            margin: 0 auto;
+            gap: 50px;
+        }
+    }
+
+    &__tools {
+        text-align: end;
+        padding-bottom: 5rem;
+        &-cards {
+            @include flex(center, flex-end);
+            flex-wrap: wrap;
+            max-width: 70%;
+            margin: 0 auto;
+            gap: 50px;
+        }
+    }
+}

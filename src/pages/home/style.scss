@@ -1,0 +1,127 @@
+@use "../../scss/" as *;
+
+.home {
+    height: 100vh;
+    padding: 2rem;
+
+    &__container {
+        display: grid;
+        place-items: center;
+        align-content: center;
+        justify-content: space-around;
+        height: calc(100% - 20vh);
+    }
+
+    &__hi {
+        font-size: 1.5rem;
+        text-align: start;
+        width: 100%;
+        font-family: $font-2;
+        position: relative;
+    }
+
+    &__name {
+        font-size: 5rem;
+        letter-spacing: 0.7rem;
+        font-family: $font-1;
+        font-weight: 400;
+        box-shadow: 0px 0px 130px 130px $bg-gradient-2;
+        background-color: $bg-gradient-2;
+        animation: box-shadow 5s infinite;
+    }
+
+    &__occupation {
+        font-size: 1.5rem;
+        font-family: $font-2;
+        letter-spacing: 0.2rem;
+    }
+
+    &__nav {
+        @include flex(center, space-between);
+        padding: 1rem;
+
+        &-box {
+            @include flex(center, center);
+            font-size: 2rem;
+
+            & * ~ * {
+                margin-left: 1rem;
+            }
+
+            p {
+                cursor: pointer;
+            }
+
+            .arrow-down {
+                background-color: $second-color;
+                border-radius: 50%;
+                color: black;
+            }
+        }
+    }
+
+    &__introduce {
+        @include flex(center, center);
+
+        flex-direction: column;
+        margin-top: 9rem;
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+
+        &__content {
+            @include flex(center, space-between);
+            flex-direction: column;
+
+            @media (min-width: 796px) {
+                flex-direction: row;
+            }
+            max-width: 980px;
+
+            .introduce {
+                flex: 1.9;
+
+                p {
+                    margin: 7px 0;
+                }
+            }
+
+            .gif {
+                flex: 1;
+                text-align: center;
+                padding-top: 67px;
+            }
+        }
+    }
+
+    .home__find-me {
+        text-align: center;
+
+        h2 {
+            text-transform: uppercase;
+        }
+
+        .social-medias {
+            @include flex(center, center);
+            margin-bottom: 2rem;
+
+            li {
+                list-style: none;
+                margin-left: 1rem;
+                font-size: 1.5rem;
+                background-color: $bg-gradient-2;
+                padding: 8px 10px;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $text-color-2;
+                    color: black;
+                    transition: 0.5s ease;
+                }
+            }
+        }
+    }
+}
