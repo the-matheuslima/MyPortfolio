@@ -63,10 +63,8 @@
         padding-bottom: 5rem;
         &-cards {
             @include flex(center, flex-end);
-            flex-wrap: wrap;
-            max-width: 70%;
-            margin: 0 auto;
             gap: 50px;
+            padding: 2rem;
         }
     }
 }
