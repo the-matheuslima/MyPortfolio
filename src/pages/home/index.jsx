@@ -13,7 +13,7 @@ const Home = () => {
             exit={{ opacity: 1, scale: 1 }}
             className="home">
             <section className="home__container">
-                <span className="crisp home__hi">Olá, Sou o</span>
+                <span className="crisp home__hi">Olá, me chamo</span>
                 <h1 className="home__name">Matheus Lima</h1>
                 <p className="crisp home__occupation">Desenvolvedor Frontend.</p>
             </section>
@@ -35,13 +35,13 @@ const Home = () => {
                     <div className="introduce">
                         <h2>Deixe me <span className="crisp">Apresentar</span></h2>
 
-                        <p><i>Ola me chamo <span className="crisp">Matheus</span>, tenho 18 anos, estudo programação web desde o final de 2021, moro em Mauá, Sp</i>.</p> <br />
+                        <p><i>Olá, me chamo <span className="crisp">Matheus</span>, tenho 18 anos, estudo programação web desde o final de 2021, moro em Mauá, Sp</i>.</p> <br />
 
-                        <p><i>Amo coisas nerds, como animes, mangas, games, series e livros. Meu anime/manga favorito é <span className="crisp">One punch man</span> e sim saitama <span className="crisp">sola</span> goku </i>👊.</p> <br />
+                        <p><i>Amo coisas nerds, como animes, mangas, games, series e livros. Meu anime/manga favorito é <span className="crisp">One punch man</span>. E sim, saitama <span className="crisp">sola</span> goku </i>👊.</p> <br />
 
-                        <p><i>Ironias a parte, sou apaixonado por programação, adoro estudar e aprender novas tecnologias. Todo conhecimento que tenho hoje e graças a livros, cursos gratuitos e a comunidade</i> 💖.</p> <br />
+                        <p><i>Ironias à parte, sou apaixonado por programação, adoro estudar e aprender novas tecnologias. Todo conhecimento que tenho hoje e graças a livros, cursos gratuitos e a comunidade</i> 💖.</p> <br />
 
-                        <p><i>Bom, por fim, como ja disse um cara que admiro bastante <span className="crisp">Ayrton Senna :</span> "Na vida não importa o que você esteja fazendo, faça sempre o seu melhor." </i></p>
+                        <p><i>Bom, por fim, como já disse um cara que admiro bastante <span className="crisp">Ayrton Senna</span>: "Na vida não importa o que você esteja fazendo, faça sempre o seu melhor." </i></p>
                     </div>
 
                     <div className="gif">
