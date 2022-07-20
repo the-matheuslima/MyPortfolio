@@ -37,22 +37,20 @@ const Projects = () => {
                     {projects.map((el) => (
                         <li className="projects__list-item" key={el.id}>
                             <div className="links">
-                                <a href={el.github} target='_blank'><span className="crisp"><TiSocialGithub /></span></a>
+                                <a href={el.github} target='_blank' rel="external"><span className="crisp"><TiSocialGithub /></span></a>
                                 <div className="image">
 
                                     <img src={el.image} alt="" />
                                 </div>
 
-                                <a href={el.link} target='_blank'><TiAttachment /></a>
+                                <a href={el.link} target='_blank' rel="external"><TiAttachment /></a>
                             </div>
 
                             <h3>{el.name}</h3>
                             <p>{el.about}</p>
-
                         </li>
                     ))}
                 </motion.ul>
-
             </section>
         </motion.main>
     )
