@@ -8,9 +8,9 @@ const FormContact = () => {
 
     const form = useRef();
 
-    const SERVICE_ID = 'service_xgzbqml';
-    const TEMPLATE_ID = 'template_j2bbkco'
-    const USER_ID = '7rj_DgAUMrUW_lrv1'
+    const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID
+    const USER_ID = import.meta.env.VITE_USER_ID
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
