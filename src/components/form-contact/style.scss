@@ -10,11 +10,19 @@
 
     &__group {
         @include flex(center, center);
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+
         gap: 10px;
 
         &-box {
             width: 30%;
             height: 100%;
+            @media (max-width: $mobile) {
+                width: 70%;
+            }
 
             .input {
                 background: none;
