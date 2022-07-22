@@ -23,7 +23,9 @@ const Projects = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             exit={{ opacity: 0, scale: 0 }}
-            className="projects">
+            className="projects"
+        >
+
             <section className="projects__content">
                 <h2 className="title mgb-1">Meus <span className="crisp">Projetos</span> mais Recentes</h2>
 
@@ -39,14 +41,13 @@ const Projects = () => {
                             <div className="links">
                                 <a href={el.github} target='_blank' rel="external"><span className="crisp"><TiSocialGithub /></span></a>
                                 <div className="image">
-
                                     <img src={el.image} alt="" />
                                 </div>
 
                                 <a href={el.link} target='_blank' rel="external"><TiAttachment /></a>
                             </div>
 
-                            <h3>{el.name}</h3>
+                            <h3>{el.name} | <span className="crisp">{el.technologies.join(' | ')}</span></h3>
                             <p>{el.about}</p>
                         </li>
                     ))}
