@@ -9,22 +9,21 @@ import { motion } from "framer-motion"
 function About() {
     return (
         <motion.main
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            exit={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+            className="about"
+        >
 
-            className="about">
             <section className="about__intro">
                 <div className="about__intro-bg">
-
                     <div className="about__info">
                         <h2><span className="crisp">Sobre</span> mim</h2>
                         <blockquote >
 
                             <p> Estou sempre em busca de novos conhecimentos. Estudo programação web desde 2021, desde então, venho criando projetos pessoais e profissionais, nos quais acabo pondo em prática todos os conhecimentos que adquiro. Sou uma pessoa bem flexível e fácil de se lidar, adoro trabalhos em grupos e de aprender coisas novas com os outros.</p>
 
-                            <p>Estou sempre tendo em mente as melhores práticas para escrever códigos mais reutilizáveis e de fácil manutenção.Atualmente, estou focando meus estudos linguagem TypeScript, em conjunto com a biblioteca ReactJs.</p>
+                            <p>Estou sempre tendo em mente as melhores práticas para escrever códigos mais reutilizáveis e de fácil manutenção. Atualmente, estou focando meus estudos linguagem TypeScript, em conjunto com a biblioteca ReactJs.</p>
                         </blockquote>
                     </div>
 
@@ -34,7 +33,6 @@ function About() {
                 </div>
 
             </section>
-
             <section className="about__skills">
                 <h2><span className="crisp">Minhas</span> Habilidades</h2>
 
@@ -44,16 +42,6 @@ function About() {
                     ))}
                 </div>
             </section>
-
-            <section className="about__tools">
-                <h2><span className="crisp">Ferramentas </span> que uso</h2>
-                <div className="about__tools-cards">
-                    {Icons.IconsTools.map((skills, i) => (
-                        <Card iconsSkills={skills.imgUrl} name={skills.name} key={i} />
-                    ))}
-                </div>
-            </section>
-
             <FormContact />
         </motion.main>
     );

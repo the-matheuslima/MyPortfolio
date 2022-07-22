@@ -31,17 +31,10 @@ const IconsSkills = [
         imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
         name: 'Jest'
     },
-]
-
-const IconsTools = [
     {
         imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
         name: 'Git'
-    },
-    {
-        imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg',
-        name: 'Vs'
-    },
+    }
 ]
 
-export default { IconsSkills, IconsTools }
+export default { IconsSkills }
